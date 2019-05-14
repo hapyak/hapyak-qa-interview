@@ -3,16 +3,17 @@
 
 The purpose of this exercise is to evaluate your skills around writing tests for video.
 
-
 # Getting started
 
 ## Requirements
-You need to have a version of Node.js installed on your computer to complete this exercise. You can [install it from here](https://nodejs.org/en/download/) if you don't have it already.
+You need to have a version of Node.js installed on your computer to complete this exercise. You can [install it from here](https://nodejs.org/en/download/) if you don't have it already. You also need to have [git installed](https://www.linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows/).
 
 ## Getting the source
-Because we'd like you to keep your answers to the exercise private, please create a *duplicate* of this repo by performing the steps [here](https://help.github.com/en/articles/duplicating-a-repository#mirroring-a-repository)
+In your command-line environment, clone this repo
 
-Once you've got the repo duplicated, in your command-line environment navigate to it's directory and run these commands
+    git clone git@github.com:hapyak/hapyak-qa-interview.git
+
+Once that's finished, navigate to the directory and run these commands
 
     npm install
     npm start
