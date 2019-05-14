@@ -1,8 +1,8 @@
 /* 
-    the Chai Assertion Library is available as a global. It's configured for behavior driven delopment
-    Available assertion methods are documente here - https://www.chaijs.com/guide/styles/#expect
+    the Chai Assertion Library exposes `chai` and `expect` global variables. It's configured for behavior driven development
+    Available assertion methods are documented here - https://www.chaijs.com/guide/styles/#expect
 
-    The video player is using Video.js. It's wrapped in HapYak's wrapper.
+    The video player is Video.js. It's wrapped in a HapYak wrapper.
     The HapYak viewer API is documented here - http://www.hapyak.com/docs/hapyak-embed-api/#ViewerAPI
 */
 
@@ -13,7 +13,7 @@
     describe('The test components', () => {
         beforeEach(done => {
             // This is the viewer setup call for HapYak. It configures the HapYak wrapper to wrap a Video.js player
-            // You shouldn't need to modify this at all
+            // You shouldn't need to modify this
             hapyak.viewer({
                 apiKey: '90b87e2798bb439c996e',
                 projectId: 281706,
@@ -29,7 +29,7 @@
         });
 
         afterEach(() => {
-            // This is the viewer tear code. You shouldn't need to modify this at all
+            // This is the viewer teardown code. You shouldn't need to modify this
             if (viewer) {
                 viewer.destroy();
             }
@@ -53,8 +53,8 @@
         });
 
         // since this is an async test, you need to call `done` once the async operation is complete
-        it('should go to to a specific time in the video', done => {
-            // write a test that jumps to a specific tme in the video and that verifies the video successfully reached that time
+        it('should seek to a specific time in the video', done => {
+            // write a test that seeks to a specific tme in the video and that verifies the video successfully reached that time
         });
     });
 })();
