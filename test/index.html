@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HapYak Mocha Test Harness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+    <link rel="stylesheet" href="//vjs.zencdn.net/4.8/video-js.css">
+    <script type="text/javascript" src="//vjs.zencdn.net/4.8/video.js"></script>
+    <script type="text/javascript" src="//d2qrdklrsxowl2.cloudfront.net/js/hapyak.js"></script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+
+    <script class="mocha-init">
+      mocha.setup({
+        ui: 'bdd',
+        ignoreLeaks: true
+      });
+    </script>
+
+    <!-- video is muted by default to bypass auto play limitations recently implemented by browsers -->
+    <video id="hapyak-player-157199-8825" controls muted class="video-js vjs-default-skin" width="720" height="405" playsinline="playsinline">
+        <source src="https://sample.hapyak-hosted.com/group_uploads/23/16673/videos/862f7e32a9b94974b98f004ae49fa9ef/Sample-Video-with-sound.mp4" type="video/mp4"/>
+    </video>
+
+    <script type="text/javascript" src="./index.js"></script>
+    <script class="mocha-exec">
+      mocha.run();
+    </script>
+  </body>
+</html>

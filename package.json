@@ -1,0 +1,25 @@
+{
+  "name": "hapyak-qa-interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test/index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/http-server test -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hapyak/hapyak-qa-interview.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/hapyak/hapyak-qa-interview/issues"
+  },
+  "homepage": "https://github.com/hapyak/hapyak-qa-interview#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
