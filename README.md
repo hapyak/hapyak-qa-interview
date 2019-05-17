@@ -11,7 +11,7 @@ You need to have a version of Node.js installed on your computer to complete thi
 ## Getting the source
 In your command-line environment, clone this repo
 
-    git clone git@github.com:hapyak/hapyak-qa-interview.git
+    git clone https://github.com/hapyak/hapyak-qa-interview.git
 
 Once that's finished, navigate to the directory and run these commands
 
